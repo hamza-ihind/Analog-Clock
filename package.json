@@ -1,0 +1,22 @@
+{
+	"name": "analog-clock",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {
+		"test": "node-sass main.scss style.css -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hamza-ihind/Analog-Clock.git"
+	},
+	"author": "E11even",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hamza-ihind/Analog-Clock/issues"
+	},
+	"homepage": "https://github.com/hamza-ihind/Analog-Clock#readme",
+	"dependencies": {
+		"node-sass": "^6.0.1"
+	}
+}

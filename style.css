@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ececf3;
+  color: #4f4f64; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.grid {
+  display: grid; }
+
+.clock__container {
+  height: 100vh;
+  grid-template-rows: 1fr max-content; }
+
+.clock__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: -6px -6px 16px white, 6px 6px 16px #d1d1e6, inset 6px 6px 16px #d1d1e6, inset -6px -6px 16px white;
+  border-radius: 50%;
+  justify-self: center; }
+
+.clock__content {
+  align-self: center;
+  row-gap: 3.5rem; }
+
+.clock__twelve, .clock__three, .clock__six, .clock__nine {
+  position: absolute;
+  width: 1rem;
+  height: 1px;
+  background-color: #9b9bb0; }
+
+.clock__twelve, .clock__six {
+  transform: translateX(-50%) rotate(90deg); }
+
+.clock__twelve {
+  top: 1.25rem;
+  left: 50%; }
+
+.clock__three {
+  top: 50%;
+  right: 0.75rem; }
+
+.clock__six {
+  bottom: 1.25rem;
+  left: 50%; }
+
+.clock__nine {
+  left: 0.75rem;
+  top: 50%; }
+
+.clock__rounder {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #3b3bbf;
+  border-radius: 50%;
+  border: 2px solid #ececf3;
+  z-index: 10; }
+
+.clock__hours, .clock__minutes, .clock__seconds {
+  position: absolute;
+  display: flex;
+  justify-content: center; }
+
+.clock__hours {
+  width: 105px;
+  height: 105px; }
+
+.clock__hours::before {
+  content: "";
+  position: absolute;
+  background-color: #4f4f64;
+  width: 0.25rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  z-index: 1; }
+
+.clock__minutes {
+  width: 136px;
+  height: 136px; }
+
+.clock__minutes::before {
+  content: "";
+  position: absolute;
+  background-color: #4f4f64;
+  width: 0.25rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+  z-index: 1; }
+
+.clock__seconds {
+  width: 130px;
+  height: 130px; }
+
+.clock__seconds::before {
+  content: "";
+  position: absolute;
+  background-color: #3b3bbf;
+  width: 0.125rem;
+  height: 5rem;
+  border-radius: 0.75rem;
+  z-index: 1; }
+
+.clock__logo {
+  width: max-content;
+  justify-self: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #9b9bb0;
+  transition: 0.3s; }
+
+.clock__logo:hover {
+  color: #3b3bbf; }
