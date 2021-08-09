@@ -42,6 +42,12 @@ body {
 	color: $text-color;
 }
 
+body .dark-theme {
+	$title-color: hsl($hue-color, 12%, 95%);
+	$text-color: hsl($hue-color, 12%, 75%);
+	$body-color: hsl($hue-color, 10%, 16%);
+}
+
 a {
 	text-decoration: none;
 }
@@ -172,6 +178,28 @@ a {
 	&__logo:hover {
 		color: $first-color;
 	}
+	&__text {
+		display: flex;
+		justify-content: center;
+		margin-left: 0.8rem;
+	}
+	&__text-hours,
+	&__text-minutes {
+		font-size: $biggest-font-size;
+		font-weight: $font-medium;
+		color: $title-color;
+	}
+	&__text-ampm {
+		font-size: $tiny-font-size;
+		color: $title-color;
+		font-weight: $font-medium;
+		margin-left: $mb-1;
+	}
+	&__date {
+		text-align: center;
+		font-size: $small-font-size;
+		font-weight: $font-medium;
+	}
 }
 
 //Media Queries
@@ -180,4 +208,14 @@ a {
 	$small-font-size: 0.875rem;
 	$smaller-font-size: 0.813rem;
 	$tiny-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 968px) {
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.clock__logo {
+		margin-bottom: 3rem;
+	}
 }

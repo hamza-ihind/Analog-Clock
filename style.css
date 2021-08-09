@@ -128,3 +128,31 @@ a {
 
 .clock__logo:hover {
   color: #3b3bbf; }
+
+.clock__text {
+  display: flex;
+  justify-content: center;
+  margin-left: 0.8rem; }
+
+.clock__text-hours, .clock__text-minutes {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #12123b; }
+
+.clock__text-ampm {
+  font-size: 0.625rem;
+  color: #12123b;
+  font-weight: 500;
+  margin-left: 0.25rem; }
+
+.clock__date {
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: 500; }
+
+@media screen and (min-width: 968px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto; }
+  .clock__logo {
+    margin-bottom: 3rem; } }
